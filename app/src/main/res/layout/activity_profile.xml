@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFDFD"
+    tools:context=".Profile">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/itop"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/atas" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgFoto"
+                    android:layout_width="137dp"
+                    android:layout_height="164dp"
+                    android:paddingBottom="20dp"
+                    android:src="@drawable/foto"
+                    app:civ_border_color="#FFF"
+                    app:civ_border_width="4dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/itop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/itop" />
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Miftahul Ulum"
+                    android:textColor="#051475"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgFoto"
+                    app:layout_constraintEnd_toEndOf="@+id/imgFoto"
+                    app:layout_constraintStart_toStartOf="@+id/imgFoto" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtName">
+
+                    <Button
+                        android:id="@+id/btn1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_btn"
+                        android:drawableStart="@drawable/grad"
+                        android:text="Universitas Pelita Bangsa"
+                        android:textAllCaps="false"
+                        android:textAlignment="viewStart"
+                        android:paddingStart="20dp"
+                        android:textStyle="bold"
+                        android:drawablePadding="20dp"
+                        android:elevation="3dp"/>
+                    <Button
+                        android:id="@+id/btn2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_btn"
+                        android:drawableStart="@drawable/nc"
+                        android:text="TI.19.D.4"
+                        android:textAllCaps="false"
+                        android:textAlignment="viewStart"
+                        android:paddingStart="20dp"
+                        android:textStyle="bold"
+                        android:drawablePadding="20dp"
+                        android:elevation="3dp"/>
+                    <Button
+                        android:id="@+id/btn3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_btn"
+                        android:drawableStart="@drawable/mail"
+                        android:text="miftahul29ulum@gmail.com"
+                        android:textAllCaps="false"
+                        android:textAlignment="viewStart"
+                        android:paddingStart="20dp"
+                        android:textStyle="bold"
+                        android:drawablePadding="20dp"
+                        android:elevation="3dp"/>
+                    <Button
+                        android:id="@+id/btn4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_btn"
+                        android:drawableStart="@drawable/watsapp"
+                        android:text="081297468526"
+                        android:textAllCaps="false"
+                        android:textAlignment="viewStart"
+                        android:paddingStart="20dp"
+                        android:textStyle="bold"
+                        android:drawablePadding="20dp"
+                        android:elevation="3dp"/>
+                    <Button
+                        android:id="@+id/btn5"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_btn"
+                        android:drawableStart="@drawable/llokasi"
+                        android:text="Pasirsari, Cikarang Selatan"
+                        android:textAllCaps="false"
+                        android:textAlignment="viewStart"
+                        android:paddingStart="20dp"
+                        android:textStyle="bold"
+                        android:drawablePadding="20dp"
+                        android:elevation="3dp"/>
+                    <Button
+                        android:id="@+id/btnback"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_blue"
+                        android:text="Back to main page"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:paddingStart="20dp"
+                        android:textStyle="bold"
+                        android:drawablePadding="20dp"
+                        android:elevation="3dp"/>
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
